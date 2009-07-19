@@ -1,0 +1,10 @@
+<h2>Description</h2>
+<p>
+This class has a dual purpose: It can be used to create permutations of a given
+size and to do some simple computations with/on permutations.
+</p>
+<p>
+The instances of this class don't require much memory because they don't
+include the permutation as a data structure. They only save the information
+necessary to create the permutation if asked to do so.
+</p>
