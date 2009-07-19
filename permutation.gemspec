@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
 
   s.has_rdoc = true
-  s.rdoc_options << '--title' <<  'Permutation' << '--line-numbers'
-  s.extra_rdoc_files = Dir['lib/**/*.rb']
+  s.rdoc_options << '--main' <<  'doc-main.txt' << '--line-numbers'
+  s.extra_rdoc_files << 'doc-main.txt'
   s.test_files << 'test/test.rb'
 
   s.author = "Florian Frank"
