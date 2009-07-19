@@ -46,7 +46,7 @@ Gem::Specification.new do |s|
 
   s.has_rdoc = true
   s.rdoc_options << '--title' <<  'Permutation' << '--line-numbers'
-  s.extra_rdoc_files = Dir['lib/**/*.rb']
+  s.extra_rdoc_files << 'doc-main.txt'
   s.test_files << 'test/test.rb'
 
   s.author = "Florian Frank"
