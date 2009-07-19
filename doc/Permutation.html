@@ -1,0 +1,1781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Permutation</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/permutation/version_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/permutation/version.rb">lib/permutation/version.rb</a></li>
+					
+						<li><a href="./lib/permutation_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/permutation.rb">lib/permutation.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#M000003">::for</a></li>
+					
+					<li><a href="#M000002">::from_cycles</a></li>
+					
+					<li><a href="#M000001">::from_value</a></li>
+					
+					<li><a href="#M000000">::new</a></li>
+					
+					<li><a href="#M000025">#*</a></li>
+					
+					<li><a href="#M000023">#-@</a></li>
+					
+					<li><a href="#M000017">#<=></a></li>
+					
+					<li><a href="#M000019">#==</a></li>
+					
+					<li><a href="#M000024">#compose</a></li>
+					
+					<li><a href="#M000026">#cycles</a></li>
+					
+					<li><a href="#M000015">#each</a></li>
+					
+					<li><a href="#M000016">#each!</a></li>
+					
+					<li><a href="#M000018">#eql?</a></li>
+					
+					<li><a href="#M000029">#even?</a></li>
+					
+					<li><a href="#M000031">#factorial</a></li>
+					
+					<li><a href="#M000020">#hash</a></li>
+					
+					<li><a href="#M000022">#invert</a></li>
+					
+					<li><a href="#M000021">#invert!</a></li>
+					
+					<li><a href="#M000009">#next</a></li>
+					
+					<li><a href="#M000007">#next!</a></li>
+					
+					<li><a href="#M000030">#odd?</a></li>
+					
+					<li><a href="#M000012">#pred</a></li>
+					
+					<li><a href="#M000011">#pred!</a></li>
+					
+					<li><a href="#M000006">#project</a></li>
+					
+					<li><a href="#M000014">#random</a></li>
+					
+					<li><a href="#M000013">#random!</a></li>
+					
+					<li><a href="#M000004">#rank=</a></li>
+					
+					<li><a href="#M000032">#rank_indices</a></li>
+					
+					<li><a href="#M000028">#sgn</a></li>
+					
+					<li><a href="#M000027">#signum</a></li>
+					
+					<li><a href="#M000010">#succ</a></li>
+					
+					<li><a href="#M000008">#succ!</a></li>
+					
+					<li><a href="#M000033">#unrank_indices</a></li>
+					
+					<li><a href="#M000005">#value</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+			<div id="includes-section" class="section">
+				<h3 class="section-header">Included Modules</h3>
+				<ul class="link-list">
+				
+				
+					<li><span class="include">Enumerable</span></li>
+				
+				
+				
+					<li><span class="include">Comparable</span></li>
+				
+				
+				</ul>
+			</div>
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Permutation.html">Permutation</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Permutation</h1>
+
+		<div id="description">
+			<h1>permutation.rb - <a href="Permutation.html">Permutation</a> class for Ruby</h1>
+<h2>Author</h2>
+<p>
+Florian Frank <a href="mailto:flori@ping.de">flori@ping.de</a>
+</p>
+<h2>License</h2>
+<p>
+This is free software; you can redistribute it and/or modify it under the
+terms of the GNU General Public License Version 2 as published by the Free
+Software Foundation: <a
+href="http://www.gnu.org/copyleft/gpl.html">www.gnu.org/copyleft/gpl.html</a>
+</p>
+<h2>Download</h2>
+<p>
+The latest version of <b>permutation</b> can be found at
+</p>
+<ul>
+<li><a
+href="http://rubyforge.org/frs/?group_id=291">rubyforge.org/frs/?group_id=291</a>
+
+</li>
+</ul>
+<p>
+The homepage of this library is located at
+</p>
+<ul>
+<li><a href="http://permutation.rubyforge.org">permutation.rubyforge.org</a>
+
+</li>
+</ul>
+<h2>Description</h2>
+<p>
+This class has a dual purpose: It can be used to create permutations of a
+given size and to do some simple computations with/on permutations. The
+instances of this class don&#8217;t require much memory because they
+don&#8217;t include the permutation as a data structure. They only save the
+information necessary to create the permutation if asked to do so.
+</p>
+<p>
+To generate permutations the ranking/unranking method described in [SS97]
+is used. Because of Ruby&#8217;s Bignum arithmetic it is useful also for
+permutations of very large size.
+</p>
+<h2>Examples</h2>
+<p>
+In this section some examples show what can be done with this class.
+</p>
+<p>
+Creating all permutations and project them on data:
+</p>
+<pre>
+ perm = Permutation.new(3)
+ # =&gt; #&lt;Permutation:0x57dc94 @last=5, @rank=0, @size=3&gt;
+ perm.map { |p| p.value }
+ # =&gt; [[0, 1, 2], [0, 2, 1], [1, 0, 2], [1, 2, 0], [2, 0, 1], [2, 1, 0]]
+ colors = [:r, :g, :b]
+ # =&gt; [:r, :g, :b]
+ perm.map { |p| p.project(colors) }
+ # =&gt; [[:r, :g, :b], [:r, :b, :g], [:g, :r, :b], [:g, :b, :r], [:b, :r, :g],
+ #  [:b, :g, :r]]
+ string = &quot;abc&quot;# =&gt; &quot;abc&quot;
+ perm.map { |p| p.project(string) }
+ # =&gt; [&quot;abc&quot;, &quot;acb&quot;, &quot;bac&quot;, &quot;bca&quot;, &quot;cab&quot;, &quot;cba&quot;]
+</pre>
+<p>
+Or perhaps more convenient to use:
+</p>
+<pre>
+ perm = Permutation.for(&quot;abc&quot;)
+ perm.map { |p| p.project }
+ # =&gt; [&quot;abc&quot;, &quot;acb&quot;, &quot;bac&quot;, &quot;bca&quot;, &quot;cab&quot;, &quot;cba&quot;]
+</pre>
+<p>
+Finding the successor and predecessor of Permutations or a certain <a
+href="Permutation.html">Permutation</a> for a given rank:
+</p>
+<pre>
+ perm = Permutation.new(7)
+ # =&gt; #&lt;Permutation:0x8453c @rank=0, @size=7, @last=5039&gt;
+ perm.succ!
+ # =&gt; #&lt;Permutation:0x8453c @rank=1, @size=7, @last=5039&gt;
+ perm.succ!
+ # =&gt; #&lt;Permutation:0x8453c @rank=2, @size=7, @last=5039&gt;
+ perm.succ!
+ # =&gt; #&lt;Permutation:0x8453c @rank=3, @size=7, @last=5039&gt;
+ perm.pred!
+ # =&gt; #&lt;Permutation:0x8453c @rank=2, @size=7, @last=5039&gt;
+ perm.rank = 3200
+ # =&gt; 3200
+ perm
+ # =&gt; #&lt;Permutation:0x8453c @rank=3200, @size=7, @last=5039&gt;
+ perm.value
+ # =&gt; [4, 2, 5, 1, 3, 0, 6]
+</pre>
+<p>
+Generating random Permutations
+</p>
+<pre>
+ perm = Permutation.new(10)
+ # =&gt; #&lt;Permutation:0x59f4c0 @rank=0, @size=10, @last=3628799&gt;
+ perm.random!.value
+ # =&gt; [6, 4, 9, 7, 3, 5, 8, 1, 2, 0]
+ perm.random!.value
+ # =&gt; [3, 7, 6, 1, 4, 8, 9, 2, 5, 0]
+ perm.random!.value
+ # =&gt; [2, 8, 4, 9, 3, 5, 6, 7, 0, 1]
+ perm.random!.project(&quot;ABCDEFGHIJ&quot;)
+ # =&gt; &quot;DFJGAEBCIH&quot;
+ perm.random!.project(&quot;ABCDEFGHIJ&quot;)
+ # =&gt; &quot;BFADEGHJCI&quot;
+</pre>
+<p>
+Performing some mathematical operations on/with Permutations
+</p>
+<pre>
+ p1 = Permutation.from_cycles([[1, 3, 2], [5, 7]], 10)
+ # =&gt; #&lt;Permutation:0x593594 @rank=80694, @size=10, @last=3628799&gt;
+ p2 = Permutation.from_value [3, 2, 0, 5, 6, 8, 9, 1, 4, 7]
+ # =&gt; #&lt;Permutation:0x5897b0 @rank=1171050, @size=10, @last=3628799&gt;
+ p3 = p1 * p2
+ # =&gt; #&lt;Permutation:0x586a88 @rank=769410, @size=10, @last=3628799&gt;
+ p3.value
+ # =&gt; [2, 1, 0, 7, 6, 8, 9, 3, 4, 5]
+ p3.cycles
+ # =&gt; [[0, 2], [3, 7], [4, 6, 9, 5, 8]]
+ p4 = p1 * -p2
+ # =&gt; #&lt;Permutation:0x581a10 @rank=534725, @size=10, @last=3628799&gt;
+ p4.value
+ # =&gt; [1, 5, 3, 0, 8, 2, 4, 9, 7, 6]
+ p4.cycles
+ # =&gt; [[0, 1, 5, 2, 3], [4, 8, 7, 9, 6]]
+ id = p1 * -p1
+ # =&gt; #&lt;Permutation:0x583a7c @rank=0, @size=10, @last=3628799&gt;
+</pre>
+<h2>References</h2>
+<pre>
+ [SS97] The Algorithm Design Manual, Steven S. Skiena, Telos/Springer, 1997.
+</pre>
+
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="VERSION">VERSION</a></dt>
+				
+				<dd class="description"><p>
+<a href="Permutation.html">Permutation</a> version
+</p></dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="size-attribute-method" class="method-detail">
+				<a name="size"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">size</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+Returns the size of this permutation, a Fixnum.
+</p>
+				
+				</div>
+			</div>
+			
+			<div id="rank-attribute-method" class="method-detail">
+				<a name="rank"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">rank</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+Returns the size of this permutation, a Fixnum in the range of 0 and <a
+href="Permutation.html#last">Permutation#last</a>.
+</p>
+				
+				</div>
+			</div>
+			
+			<div id="last-attribute-method" class="method-detail">
+				<a name="last"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">last</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+Returns the rank of the last ranked <a
+href="Permutation.html">Permutation</a> of size <a
+href="Permutation.html#size">Permutation#size</a> .
+</p>
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="for-method" class="method-detail ">
+				<a name="M000003"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">for</span><span
+						class="method-args">(collection, rank = 0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+A permutation instance of size collection.size is created with collection
+as the default <a href="Permutation.html#M000006">Permutation#project</a>
+data object. A collection should respond to size, [], and []=. The <a
+href="Permutation.html">Permutation</a> instance will default to rank 0 if
+none is given.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="for-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 164</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-keyword kw">for</span>(<span class="ruby-identifier">collection</span>, <span class="ruby-identifier">rank</span> = <span class="ruby-value">0</span>)
+    <span class="ruby-identifier">perm</span> = <span class="ruby-identifier">new</span>(<span class="ruby-identifier">collection</span>.<span class="ruby-identifier">size</span>, <span class="ruby-identifier">rank</span>)
+    <span class="ruby-identifier">perm</span>.<span class="ruby-identifier">instance_variable_set</span>(<span class="ruby-identifier">:@collection</span>, <span class="ruby-identifier">collection</span>)
+    <span class="ruby-identifier">perm</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="from-cycles-method" class="method-detail ">
+				<a name="M000002"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">from_cycles</span><span
+						class="method-args">(cycles, max = 0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a new <a href="Permutation.html">Permutation</a> instance from the
+Array of Arrays <tt>cycles</tt>. This is for example the result of a call
+to the <a href="Permutation.html#M000026">Permutation#cycles</a> method .
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="from-cycles-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 148</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">from_cycles</span>(<span class="ruby-identifier">cycles</span>, <span class="ruby-identifier">max</span> = <span class="ruby-value">0</span>)
+    <span class="ruby-identifier">indices</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">max</span>)
+    <span class="ruby-identifier">cycles</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">cycle</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">cycle</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-keyword kw">and</span> <span class="ruby-keyword kw">next</span>
+      <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">cycle</span>.<span class="ruby-identifier">size</span>
+        <span class="ruby-identifier">indices</span>[ <span class="ruby-identifier">cycle</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] ] = <span class="ruby-identifier">cycle</span>[<span class="ruby-identifier">i</span>]
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-identifier">indices</span>.<span class="ruby-identifier">each_with_index</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">r</span>, <span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-identifier">r</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">indices</span>[<span class="ruby-identifier">i</span>] = <span class="ruby-identifier">i</span> }
+    <span class="ruby-identifier">from_value</span>(<span class="ruby-identifier">indices</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="from-value-method" class="method-detail ">
+				<a name="M000001"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">from_value</span><span
+						class="method-args">(indices)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a new <a href="Permutation.html">Permutation</a> instance from the
+Array <tt>indices</tt>, that should consist of a permutation of Fixnums in
+the range of <tt>0</tt> and <tt>indices.size - 1</tt>. This is for example
+the result of a call to the <a
+href="Permutation.html#M000005">Permutation#value</a> method.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="from-value-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 137</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">from_value</span>(<span class="ruby-identifier">indices</span>)
+    <span class="ruby-identifier">obj</span> = <span class="ruby-identifier">new</span>(<span class="ruby-identifier">indices</span>.<span class="ruby-identifier">size</span>)
+    <span class="ruby-identifier">obj</span>.<span class="ruby-identifier">instance_eval</span> <span class="ruby-keyword kw">do</span>
+      <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">rank</span> = <span class="ruby-identifier">rank_indices</span>(<span class="ruby-identifier">indices</span>)
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-identifier">obj</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="M000000"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(size, rank = 0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a new <a href="Permutation.html">Permutation</a> instance of
+<tt>size</tt> (and ranked with <tt>rank</tt>).
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 128</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">size</span>, <span class="ruby-identifier">rank</span> = <span class="ruby-value">0</span>)
+    <span class="ruby-ivar">@size</span>, <span class="ruby-ivar">@rank</span> = <span class="ruby-identifier">size</span>, <span class="ruby-identifier">rank</span>
+    <span class="ruby-ivar">@last</span> = <span class="ruby-identifier">factorial</span>(<span class="ruby-identifier">size</span>) <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="--method" class="method-detail method-alias">
+				<a name="M000025"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">*</span><span
+						class="method-args">(other)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Alias for <a href="Permutation.html#M000024">compose</a>
+</p>
+					
+
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="--method" class="method-detail method-alias">
+				<a name="M000023"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">-@</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Alias for <a href="Permutation.html#M000022">invert</a>
+</p>
+					
+
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="M000017"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">&lt;=&gt;</span><span
+						class="method-args">(other)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Compares to <a href="Permutation.html">Permutation</a> instances according
+to their <a href="Permutation.html#size">Permutation#size</a> and the <a
+href="Permutation.html#rank">Permutation#rank</a>.
+</p>
+<p>
+The mixed in methods from the Comparable module rely on this method.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 304</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-operator">&lt;=&gt;</span>(<span class="ruby-identifier">other</span>)
+    <span class="ruby-identifier">size</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">size</span>.<span class="ruby-identifier">zero?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">rank</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">rank</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="--method" class="method-detail method-alias">
+				<a name="M000019"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">==</span><span
+						class="method-args">(other)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Alias for <a href="Permutation.html#M000018">eql?</a>
+</p>
+					
+
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="compose-method" class="method-detail ">
+				<a name="M000024"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">compose</span><span
+						class="method-args">(other)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Compose this <a href="Permutation.html">Permutation</a> instance and the
+other to a new <a href="Permutation.html">Permutation</a>. Note that a
+permutation composed with it&#8217;s inverted permutation yields the
+identity permutation, the permutation with rank 0.
+</p>
+<p>
+<b>Example:</b>
+</p>
+<pre>
+ p1 = Permutation.new(5, 42)
+ # =&gt; #&lt;Permutation:0x75370 @last=119, @rank=42, @size=5&gt;
+ p2 = p1.invert
+ # =&gt; #&lt;Permutation:0x653d0 @last=119, @rank=51, @size=5&gt;
+ p1.compose(p2)
+ =&gt; #&lt;Permutation:0x639a4 @last=119, @rank=0, @size=5&gt;
+</pre>
+<p>
+Or a little nicer to look at:
+</p>
+<pre>
+ p1 * -p1
+ # =&gt; #&lt;Permutation:0x62004 @last=119, @rank=0, @size=5&gt;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="compose-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 357</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">compose</span>(<span class="ruby-identifier">other</span>)
+    <span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">size</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>,
+      <span class="ruby-value str">&quot;permutations of unequal sizes cannot be composed!&quot;</span>
+    <span class="ruby-identifier">indices</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">value</span>
+    <span class="ruby-identifier">composed</span> = <span class="ruby-identifier">other</span>.<span class="ruby-identifier">value</span>.<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-identifier">indices</span>[<span class="ruby-identifier">i</span>] }
+    <span class="ruby-identifier">klon</span> = <span class="ruby-identifier">clone</span>
+    <span class="ruby-identifier">klon</span>.<span class="ruby-identifier">rank</span> = <span class="ruby-identifier">rank_indices</span>(<span class="ruby-identifier">composed</span>)
+    <span class="ruby-identifier">klon</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+				<div class="aliases">
+					Also aliased as: <a href="Permutation.html#M000025">*</a>
+				</div>
+				
+			</div>
+
+		
+			<div id="cycles-method" class="method-detail ">
+				<a name="M000026"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">cycles</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the cycles representation of this <a
+href="Permutation.html">Permutation</a> instance. The return value of this
+method can be used to create a new <a
+href="Permutation.html">Permutation</a> instance with the <a
+href="Permutation.html#M000002">Permutation.from_cycles</a> method.
+</p>
+<p>
+<b>Example:</b>
+</p>
+<pre>
+ perm = Permutation.new(7, 23)
+ # =&gt; #&lt;Permutation:0x58541c @last=5039, @rank=23, @size=7&gt;
+ perm.cycles
+ # =&gt; [[3, 6], [4, 5]]
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="cycles-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 378</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">cycles</span>
+    <span class="ruby-identifier">perm</span> = <span class="ruby-identifier">value</span>
+    <span class="ruby-identifier">result</span> = [[]]
+    <span class="ruby-identifier">seen</span> = {}
+    <span class="ruby-identifier">current</span> = <span class="ruby-keyword kw">nil</span>
+    <span class="ruby-keyword kw">until</span> <span class="ruby-identifier">seen</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">perm</span>.<span class="ruby-identifier">size</span>
+      <span class="ruby-identifier">current</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">current</span> = <span class="ruby-identifier">perm</span>.<span class="ruby-identifier">find</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-operator">!</span><span class="ruby-identifier">seen</span>[<span class="ruby-identifier">x</span>] }
+      <span class="ruby-keyword kw">break</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">current</span>
+      <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">seen</span>[<span class="ruby-identifier">current</span>]
+        <span class="ruby-identifier">current</span> = <span class="ruby-keyword kw">nil</span>
+        <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> []
+      <span class="ruby-keyword kw">else</span>
+        <span class="ruby-identifier">seen</span>[<span class="ruby-identifier">current</span>] = <span class="ruby-keyword kw">true</span>
+        <span class="ruby-identifier">result</span>[<span class="ruby-value">-1</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">current</span>
+        <span class="ruby-identifier">current</span> = <span class="ruby-identifier">perm</span>[<span class="ruby-identifier">current</span>]
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-identifier">result</span>.<span class="ruby-identifier">pop</span>
+    <span class="ruby-identifier">result</span>.<span class="ruby-identifier">select</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span> <span class="ruby-identifier">c</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span> }.<span class="ruby-identifier">map</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">min_index</span> = <span class="ruby-identifier">c</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">c</span>.<span class="ruby-identifier">min</span>)
+      <span class="ruby-identifier">c</span>[<span class="ruby-identifier">min_index</span><span class="ruby-operator">..</span><span class="ruby-value">-1</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">c</span>[<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">min_index</span>]
+    <span class="ruby-keyword kw">end</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="each-method" class="method-detail ">
+				<a name="M000015"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">each</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Iterates over all permutations of size <a
+href="Permutation.html#size">Permutation#size</a> starting with the first
+(<tt>rank == 0</tt>) ranked permutation and ending with the last (<tt>rank
+== <a href="Permutation.html#last">Permutation#last</a></tt>) ranked
+permutation while yielding to a freshly created <a
+href="Permutation.html">Permutation</a> instance for every iteration step.
+</p>
+<p>
+The mixed in methods from the Enumerable module rely on this method.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="each-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 276</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">each</span> <span class="ruby-comment cmt"># :yields: perm</span>
+    <span class="ruby-value">0</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">last</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">r</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">klon</span> = <span class="ruby-identifier">clone</span>
+      <span class="ruby-identifier">klon</span>.<span class="ruby-identifier">rank</span> = <span class="ruby-identifier">r</span>
+      <span class="ruby-keyword kw">yield</span> <span class="ruby-identifier">klon</span>
+    <span class="ruby-keyword kw">end</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="each--method" class="method-detail ">
+				<a name="M000016"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">each!</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Does something similar to <a
+href="Permutation.html#M000015">Permutation#each</a>. It doesn&#8217;t
+create new instances (less overhead) for every iteration step, but yields
+to a modified self instead. This is useful if one only wants to call a
+method on the yielded value and work with the result of this call.
+It&#8217;s not a good idea to put the yielded values in a data structure
+because the will all reference the same (this!) instance. If you want to do
+this use <a href="Permutation.html#M000015">Permutation#each</a>.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="each--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 291</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">each!</span>
+    <span class="ruby-identifier">old_rank</span> = <span class="ruby-identifier">rank</span>
+    <span class="ruby-value">0</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">last</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">r</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">rank</span> = <span class="ruby-identifier">r</span>
+      <span class="ruby-keyword kw">yield</span> <span class="ruby-keyword kw">self</span>
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">rank</span> = <span class="ruby-identifier">old_rank</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="eql--method" class="method-detail ">
+				<a name="M000018"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">eql?</span><span
+						class="method-args">(other)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns true if this <a href="Permutation.html">Permutation</a> instance
+and the other have the same value, that is both <a
+href="Permutation.html">Permutation</a> instances have the same <a
+href="Permutation.html#size">Permutation#size</a> and the same <a
+href="Permutation.html#rank">Permutation#rank</a>.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="eql--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 311</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">eql?</span>(<span class="ruby-identifier">other</span>)
+    <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">class</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">rank</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">rank</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+				<div class="aliases">
+					Also aliased as: <a href="Permutation.html#M000019">==</a>
+				</div>
+				
+			</div>
+
+		
+			<div id="even--method" class="method-detail ">
+				<a name="M000029"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">even?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns true if this permutation is even, false otherwise.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="even--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 420</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">even?</span>
+    <span class="ruby-identifier">signum</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="hash-method" class="method-detail ">
+				<a name="M000020"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">hash</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Computes a unique hash value for this <a
+href="Permutation.html">Permutation</a> instance.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="hash-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 318</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">hash</span>
+    <span class="ruby-identifier">size</span>.<span class="ruby-identifier">hash</span> <span class="ruby-operator">^</span> <span class="ruby-identifier">rank</span>.<span class="ruby-identifier">hash</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="invert-method" class="method-detail ">
+				<a name="M000022"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">invert</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the inverted <a href="Permutation.html">Permutation</a> of this <a
+href="Permutation.html">Permutation</a> instance. (See <a
+href="Permutation.html#M000024">Permutation#compose</a> for an example.)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="invert-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 336</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">invert</span>
+    <span class="ruby-identifier">clone</span>.<span class="ruby-identifier">invert!</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+				<div class="aliases">
+					Also aliased as: <a href="Permutation.html#M000023">-@</a>
+				</div>
+				
+			</div>
+
+		
+			<div id="invert--method" class="method-detail ">
+				<a name="M000021"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">invert!</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switchtes this <a href="Permutation.html">Permutation</a> instance to the
+inverted permutation. (See <a
+href="Permutation.html#M000024">Permutation#compose</a> for an example.)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="invert--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 324</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">invert!</span>
+    <span class="ruby-identifier">indices</span> = <span class="ruby-identifier">unrank_indices</span>(<span class="ruby-identifier">rank</span>)
+    <span class="ruby-identifier">inverted</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">size</span>)
+    <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">size</span>
+      <span class="ruby-identifier">inverted</span>[<span class="ruby-identifier">indices</span>[<span class="ruby-identifier">i</span>]] = <span class="ruby-identifier">i</span>
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">rank</span> = <span class="ruby-identifier">rank_indices</span>(<span class="ruby-identifier">inverted</span>)
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="next-method" class="method-detail ">
+				<a name="M000009"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">next</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the next ranked <a href="Permutation.html">Permutation</a>
+instance. If this instance is the <a
+href="Permutation.html#last">Permutation#last</a> permutation it returns
+the first (<tt>rank == 0</tt>) permutation.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="next-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 234</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">next</span>
+    <span class="ruby-identifier">clone</span>.<span class="ruby-identifier">next!</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+				<div class="aliases">
+					Also aliased as: <a href="Permutation.html#M000010">succ</a>
+				</div>
+				
+			</div>
+
+		
+			<div id="next--method" class="method-detail ">
+				<a name="M000007"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">next!</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switches this instance to the next ranked <a
+href="Permutation.html">Permutation</a>. If this was the <a
+href="Permutation.html#last">Permutation#last</a> permutation it wraps
+around the first (<tt>rank == 0</tt>) permutation.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="next--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 223</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">next!</span>
+    <span class="ruby-ivar">@rank</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+    <span class="ruby-ivar">@rank</span> = <span class="ruby-value">0</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@rank</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">last</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+				<div class="aliases">
+					Also aliased as: <a href="Permutation.html#M000008">succ!</a>
+				</div>
+				
+			</div>
+
+		
+			<div id="odd--method" class="method-detail ">
+				<a name="M000030"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">odd?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns true if this permutation is odd, false otherwise.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="odd--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 425</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">odd?</span>
+    <span class="ruby-identifier">signum</span> <span class="ruby-operator">==</span> <span class="ruby-value">-1</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="pred-method" class="method-detail ">
+				<a name="M000012"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">pred</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the previously ranked <a href="Permutation.html">Permutation</a>.
+If this was the first permutation it returns the last (<tt>rank == <a
+href="Permutation.html#last">Permutation#last</a></tt>) permutation.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="pred-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 252</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">pred</span>
+    <span class="ruby-identifier">clone</span>.<span class="ruby-identifier">pred!</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="pred--method" class="method-detail ">
+				<a name="M000011"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">pred!</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switches this instance to the previously ranked <a
+href="Permutation.html">Permutation</a>. If this was the first permutation
+it returns the last (<tt>rank == <a
+href="Permutation.html#last">Permutation#last</a></tt>) permutation.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="pred--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 243</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">pred!</span>
+    <span class="ruby-ivar">@rank</span> <span class="ruby-operator">-=</span> <span class="ruby-value">1</span>
+    <span class="ruby-ivar">@rank</span> = <span class="ruby-identifier">last</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@rank</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="project-method" class="method-detail ">
+				<a name="M000006"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">project</span><span
+						class="method-args">(data = @collection)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the projection of this instance&#8217;s <a
+href="Permutation.html#M000005">Permutation#value</a> into the
+<tt>data</tt> object that should respond to the #[] method. If this <a
+href="Permutation.html">Permutation</a> inbstance was created with <a
+href="Permutation.html#M000003">Permutation.for</a> the collection used to
+create it is used as a data object.
+</p>
+<p>
+<b>Example:</b>
+</p>
+<pre>
+ perm = Permutation.new(6, 312)
+ # =&gt; #&lt;Permutation:0x6ae34 @last=719, @rank=312, @size=6&gt;
+ perm.project(&quot;abcdef&quot;)
+ # =&gt; &quot;ceabdf&quot;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="project-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 212</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">project</span>(<span class="ruby-identifier">data</span> = <span class="ruby-ivar">@collection</span>)
+    <span class="ruby-identifier">data</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-value str">&quot;a collection is required to project&quot;</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-node">&quot;data size is != #{size}!&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">data</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">size</span>
+    <span class="ruby-identifier">projection</span> = <span class="ruby-identifier">data</span>.<span class="ruby-identifier">clone</span>
+    <span class="ruby-identifier">value</span>.<span class="ruby-identifier">each_with_index</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">i</span>, <span class="ruby-identifier">j</span><span class="ruby-operator">|</span> <span class="ruby-identifier">projection</span>[<span class="ruby-identifier">j</span>] = <span class="ruby-identifier">data</span>[<span class="ruby-identifier">i</span>] }
+    <span class="ruby-identifier">projection</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="random-method" class="method-detail ">
+				<a name="M000014"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">random</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns a random <a href="Permutation.html">Permutation</a> instance # of
+size <a href="Permutation.html#size">Permutation#size</a>.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="random-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 265</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">random</span>
+    <span class="ruby-identifier">clone</span>.<span class="ruby-identifier">random!</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="random--method" class="method-detail ">
+				<a name="M000013"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">random!</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switches this <a href="Permutation.html">Permutation</a> instance to random
+permutation of size <a href="Permutation.html#size">Permutation#size</a>.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="random--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 258</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">random!</span>
+    <span class="ruby-identifier">new_rank</span> = <span class="ruby-identifier">rand</span>(<span class="ruby-identifier">last</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>).<span class="ruby-identifier">to_i</span>
+    <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">rank</span> = <span class="ruby-identifier">new_rank</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="rank--method" class="method-detail ">
+				<a name="M000004"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">rank=</span><span
+						class="method-args">(m)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Assigns <tt>m</tt> to the rank attribute of this <a
+href="Permutation.html">Permutation</a> instance. That implies that the
+indices produced by a call to the <a
+href="Permutation.html#M000005">Permutation#value</a> method of this
+instance is the permutation ranked with this new <tt>rank</tt>.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="rank--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 185</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">rank=</span>(<span class="ruby-identifier">m</span>)
+    <span class="ruby-ivar">@rank</span> = <span class="ruby-identifier">m</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">factorial</span>(<span class="ruby-identifier">size</span>) 
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="sgn-method" class="method-detail method-alias">
+				<a name="M000028"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">sgn</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Alias for <a href="Permutation.html#M000027">signum</a>
+</p>
+					
+
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="signum-method" class="method-detail ">
+				<a name="M000027"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">signum</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the signum of this <a href="Permutation.html">Permutation</a>
+instance. It&#8217;s -1 if this permutation is odd and 1 if it&#8217;s an
+even permutation.
+</p>
+<p>
+A permutation is odd if it can be represented by an odd number of
+transpositions (cycles of length 2), or even if it can be represented of an
+even number of transpositions.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="signum-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 409</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">signum</span>
+    <span class="ruby-identifier">s</span> = <span class="ruby-value">1</span>
+    <span class="ruby-identifier">cycles</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">c</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">%</span> <span class="ruby-value">2</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-keyword kw">and</span> <span class="ruby-identifier">s</span> <span class="ruby-operator">*=</span> <span class="ruby-value">-1</span>
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-identifier">s</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+				<div class="aliases">
+					Also aliased as: <a href="Permutation.html#M000028">sgn</a>
+				</div>
+				
+			</div>
+
+		
+			<div id="succ-method" class="method-detail method-alias">
+				<a name="M000010"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">succ</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Alias for <a href="Permutation.html#M000009">next</a>
+</p>
+					
+
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="succ--method" class="method-detail method-alias">
+				<a name="M000008"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">succ!</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Alias for <a href="Permutation.html#M000007">next!</a>
+</p>
+					
+
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="value-method" class="method-detail ">
+				<a name="M000005"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">value</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the indices in the range of 0 to <a
+href="Permutation.html#size">Permutation#size</a> - 1 of this permutation
+that is ranked with <a href="Permutation.html#rank">Permutation#rank</a>.
+</p>
+<p>
+<b>Example:</b>
+</p>
+<pre>
+ perm = Permutation.new(6, 312)
+ # =&gt; #&lt;Permutation:0x6ae34 @last=719, @rank=312, @size=6&gt;
+ perm.value
+ # =&gt; [2, 4, 0, 1, 3, 5]
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="value-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 197</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">value</span>
+    <span class="ruby-identifier">unrank_indices</span>(<span class="ruby-ivar">@rank</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="factorial-method" class="method-detail ">
+				<a name="M000031"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">factorial</span><span
+						class="method-args">(n)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="factorial-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 433</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">factorial</span>(<span class="ruby-identifier">n</span>)
+    <span class="ruby-ivar">@@fcache</span>.<span class="ruby-identifier">size</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">n</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-ivar">@@fcache</span>[<span class="ruby-identifier">i</span>] =  <span class="ruby-identifier">i</span> <span class="ruby-operator">*</span> <span class="ruby-ivar">@@fcache</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] }
+    <span class="ruby-ivar">@@fcache</span>[<span class="ruby-identifier">n</span>]
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="rank-indices-method" class="method-detail ">
+				<a name="M000032"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">rank_indices</span><span
+						class="method-args">(p)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="rank-indices-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 438</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">rank_indices</span>(<span class="ruby-identifier">p</span>)
+    <span class="ruby-identifier">result</span> = <span class="ruby-value">0</span>
+    <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">size</span>
+      <span class="ruby-identifier">result</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">p</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">*</span> <span class="ruby-identifier">factorial</span>(<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>)
+      <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword kw">in</span> (<span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>)<span class="ruby-operator">...</span><span class="ruby-identifier">size</span>
+        <span class="ruby-identifier">p</span>[<span class="ruby-identifier">j</span>] <span class="ruby-operator">-=</span> <span class="ruby-value">1</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">p</span>[<span class="ruby-identifier">j</span>] <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">p</span>[<span class="ruby-identifier">i</span>] 
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-identifier">result</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="unrank-indices-method" class="method-detail ">
+				<a name="M000033"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">unrank_indices</span><span
+						class="method-args">(m)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="unrank-indices-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/permutation.rb, line 449</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">unrank_indices</span>(<span class="ruby-identifier">m</span>)
+    <span class="ruby-identifier">result</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">size</span>, <span class="ruby-value">0</span>)
+    <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">size</span>
+      <span class="ruby-identifier">f</span> = <span class="ruby-identifier">factorial</span>(<span class="ruby-identifier">i</span>)
+      <span class="ruby-identifier">x</span> = <span class="ruby-identifier">m</span> <span class="ruby-operator">%</span> (<span class="ruby-identifier">f</span> <span class="ruby-operator">*</span> (<span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>))
+      <span class="ruby-identifier">m</span> <span class="ruby-operator">-=</span> <span class="ruby-identifier">x</span>
+      <span class="ruby-identifier">x</span> <span class="ruby-operator">/=</span> <span class="ruby-identifier">f</span>
+      <span class="ruby-identifier">result</span>[<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] = <span class="ruby-identifier">x</span>
+      <span class="ruby-identifier">x</span> <span class="ruby-operator">-=</span> <span class="ruby-value">1</span>
+      <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword kw">in</span> (<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">i</span>)<span class="ruby-operator">...</span><span class="ruby-identifier">size</span>
+        <span class="ruby-identifier">result</span>[<span class="ruby-identifier">j</span>] <span class="ruby-operator">+=</span> <span class="ruby-value">1</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">result</span>[<span class="ruby-identifier">j</span>] <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">x</span>
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-identifier">result</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+
