@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>from_cycles (Permutation)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File lib/permutation.rb, line 27</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">from_cycles</span>(<span class="ruby-identifier">cycles</span>, <span class="ruby-identifier">max</span> = <span class="ruby-value">0</span>)
+    <span class="ruby-identifier">indices</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">max</span>)
+    <span class="ruby-identifier">cycles</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">cycle</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">cycle</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-keyword kw">and</span> <span class="ruby-keyword kw">next</span>
+      <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">cycle</span>.<span class="ruby-identifier">size</span>
+        <span class="ruby-identifier">indices</span>[ <span class="ruby-identifier">cycle</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] ] = <span class="ruby-identifier">cycle</span>[<span class="ruby-identifier">i</span>]
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-identifier">indices</span>.<span class="ruby-identifier">each_with_index</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">r</span>, <span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-identifier">r</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">indices</span>[<span class="ruby-identifier">i</span>] = <span class="ruby-identifier">i</span> }
+    <span class="ruby-identifier">from_value</span>(<span class="ruby-identifier">indices</span>)
+  <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>
