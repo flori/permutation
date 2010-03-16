@@ -259,7 +259,7 @@ class Permutation
     result = [[]]
     seen = {}
     current = nil
-    until seen == perm.size
+    loop do
       current or current = perm.find { |x| !seen[x] }
       break unless current
       if seen[current]
