@@ -1,3 +1,7 @@
+2010-03-16 (0.1.8)
+    * Disabled building of gem spec file.
+    * Reorganised documentation.
+    * Fixed an unncessary check.
 2009-07-19 (0.1.7)
     * Create a gem spec file.
     * Some cleanup.

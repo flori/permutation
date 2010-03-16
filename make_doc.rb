@@ -2,4 +2,4 @@
 
 $outdir = 'doc/'
 puts "Creating documentation in '#$outdir'."
-system "rdoc -d -m doc-main.txt -o #$outdir #{(%w[doc-main.txt] + Dir['lib/**/*.rb']) * ' '}"
+system "rdoc -d -m README -t 'Permutation library for Ruby' -o #$outdir #{(%w[README] + Dir['lib/**/*.rb']) * ' '}"
