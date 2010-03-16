@@ -4,7 +4,7 @@
   "documentation_url":"doc/index.html",
   "download_url":"http://rubyforge.org/frs/?group_id=291",
   "github_url": "http://github.com/flori/permutation/tree/master",
-  "homepage_url":"http://permutation.rubyforge.org",
+  "homepage_url":"http://flori.github.com/permutation",
   "project_name":"Permutation class for Ruby",
   "project_unixname":"permutation",
   "project_url":"http://rubyforge.org/projects/permutation"
